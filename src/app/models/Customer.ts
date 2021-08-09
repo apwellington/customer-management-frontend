@@ -19,4 +19,6 @@ export class Customer{
     this.phone = phone;
     this.address = address;
   }
+
+
 }

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Customer} from "../../models/Customer";
+
 
 @Component({
   selector: 'app-content',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
+  @Input() customers: Customer[];
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
